@@ -20,7 +20,7 @@ public class TestController {
     @GetMapping("/userList")
     public List<Map<String,Object>> userList(){
         List<Map<String,Object>> stuList = jdbcTemplate.queryForList("select * from student");
-        System.out.println("test");
+        System.out.println("hot-fix");
         return stuList;
     }
 
